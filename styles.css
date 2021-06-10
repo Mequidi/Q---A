@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root{
+    --secondary-font:'Great Vibes', cursive;
+    --primary-font:'Open Sans', sans-serif;
+    --yellow: #c59d5f;
+    --blue:#102a42;
+    --grey:#617d98;
+    --light-gray:#f1f5f8;
+    --spacing:3px;
+    --transtion:all 0.3s linear;
+}
+body{
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.q-section{
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+    max-width: 620px;
+}
+
+.q-heading{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    color: var(--yellow);
+}
+/* .section-center{
+    width:90vw;
+} */
+.q-article{
+    background-color: white;
+    padding:1.5rem 1.5rem 0 1.5rem; 
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+p{
+    margin:0;
+    font-family: var(--primary-font);
+}
+.q-title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.q-btn{
+    border: none;
+    background-color: transparent;
+    color: var(--yellow);
+    font-size: 1.5rem;
+    transition: var(--transtion);
+    cursor: pointer;
+}
+.q-btn:hover{
+    transform: rotate(90deg);
+}
+.plus-icon{
+    display: block;
+}
+.minus-icon{
+    display: none;
+}
+.ans{
+    display: none;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: var(--grey);
+}
+.show-text .plus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display:inline;
+}
+.show-text .ans{
+    display: block;
+}
+@media(max-width:700px){
+    .q-section{
+        width: 90vw;
+    }
+    .q-heading{
+        /* font-size: 2.5rem; */
+        transition: var(--transtion);
+    }
+    p{
+        font-size: 0.8rem;
+        transition: var(--transtion);
+    }
+    .q-section{
+        margin-top: 3rem;
+        transition: var(--transtion);
+    }
+    
+}
