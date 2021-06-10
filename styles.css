@@ -75,10 +75,12 @@ p{
 }
 .ans{
     display: none;
+    visibility: hidden;
     border-top:1px solid rgba(0, 0, 0, 0.3);
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     color: var(--grey);
+    transition: all 0.3s linear;
 }
 .show-text .plus-icon{
     display: none;
@@ -88,6 +90,8 @@ p{
 }
 .show-text .ans{
     display: block;
+    visibility: visible;
+
 }
 @media(max-width:700px){
     .q-section{
